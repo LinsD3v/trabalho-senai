@@ -1,0 +1,17 @@
+[
+    {
+        "item_name": "Caneta Bic",
+        "item_price": 0.99,
+        "image_path": "./images/item1.png"
+    },
+    {
+        "item_name": "Canerta de desenho",
+        "item_price": 7.99,
+        "image_path": "./images/item2.png"
+    },
+    {
+        "item_name": "Caneta de luxo",
+        "item_price": 15.99,
+        "image_path": "./images/item3.png"
+    }
+]
