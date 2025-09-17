@@ -1,0 +1,93 @@
+/* Header and nav layout */
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.header-nav h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.header-nav nav {
+    display: flex;
+    align-items: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    margin: 30px 0 20px 0;
+    font-size: 2.5rem;
+}
+.characters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.character-card {
+    background: #333;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    width: 220px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.character-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+.character-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #4caf50;
+}
+.character-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px 0;
+}
+.character-card p {
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 24px 0 32px 0;
+}
+.pagination button {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.pagination button:disabled {
+    background: #888;
+    cursor: not-allowed;
+}
+.pagination span {
+    font-size: 1.1rem;
+    color: #fff;
+}
+    margin: 4px 0;
+    font-size: 0.95rem;
+    color: #bdbdbd;
+}
