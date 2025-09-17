@@ -12,6 +12,48 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
+
+@media (max-width: 900px) {
+    .calculator {
+        padding: 18px 8px 14px 8px;
+    }
+    .display {
+        width: 160px;
+        font-size: 1.1rem;
+    }
+    .buttons {
+        grid-template-columns: repeat(4, 38px);
+        grid-gap: 8px;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .calculator-container h1 {
+        font-size: 1.2rem;
+    }
+    .calculator {
+        padding: 10px 2px 8px 2px;
+        min-width: 0;
+    }
+    .display {
+        width: 98vw;
+        min-width: 0;
+        font-size: 1rem;
+        padding: 0 4px;
+    }
+    .buttons {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 6px;
+    }
+    .btn {
+        font-size: 0.95rem;
+        padding: 8px 0;
+    }
+}
 .calculator {
     background: #2d323c;
     border-radius: 16px;

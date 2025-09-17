@@ -8,6 +8,51 @@
     margin-bottom: 10px;
     flex-wrap: wrap;
 }
+
+@media (max-width: 900px) {
+    .header-nav {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 18px;
+    }
+    .characters-container {
+        gap: 10px;
+        padding: 10px;
+    }
+    .character-card {
+        width: 160px;
+        padding: 10px;
+    }
+    .character-card img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-nav h1 {
+        font-size: 1.3rem;
+    }
+    .characters-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 4px;
+    }
+    .character-card {
+        width: 95vw;
+        min-width: 0;
+        font-size: 0.98rem;
+        padding: 8px 2px 8px 2px;
+    }
+    .character-card img {
+        width: 60px;
+        height: 60px;
+    }
+    .pagination span {
+        font-size: 0.95rem;
+    }
+}
 .header-nav h1 {
     margin: 0;
     font-size: 2.5rem;

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Gabriel Lins",
+        "funcao": "Desenvolvedor",
+        "image_path": "./members/lins.jpg"
+    },
+    {
+        "name": "João Marinho",
+        "funcao": "Desenvolvedor",
+        "image_path": "./members/marinho.jpg"
+    },
+    {
+        "name": "Leonardo Reis",
+        "funcao": "Desenvolvedor",
+        "image_path": "./members/reis.jpg"
+    },
+    {
+        "name": "Josemar Filho",
+        "funcao": "Desenvolvedor",
+        "image_path": "./members/josemar.jpg"
+    }
+]
