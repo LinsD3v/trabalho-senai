@@ -1,3 +1,89 @@
+/* Video background styles */
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.video-bg iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120vw;
+  height: 67.5vw;
+  min-width: 100vw;
+  min-height: 100vh;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+body, html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.all {
+  position: relative;
+  z-index: 1;
+}
+.button, button {
+  position: relative;
+  overflow: hidden;
+}
+
+.button::after, button::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%) scale(1.2);
+  width: 120%;
+  height: 60%;
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(255,200,0,0.7) 0%, rgba(255,80,0,0.5) 60%, rgba(255,0,0,0.2) 100%);
+  filter: blur(8px) brightness(1.2);
+  transition: opacity 0.2s;
+  z-index: 1;
+}
+
+.button:hover::after, button:hover::after {
+  opacity: 1;
+  animation: fire-flicker 0.5s infinite alternate;
+  top: 80%;
+}
+
+@keyframes fire-flicker {
+  0% {
+    filter: blur(8px) brightness(1.2);
+    transform: translateX(-50%) scale(1.2) skewY(0deg);
+  }
+  25% {
+    filter: blur(10px) brightness(1.4);
+    transform: translateX(-50%) scale(1.25) skewY(-2deg);
+  }
+  50% {
+    filter: blur(12px) brightness(1.1);
+    transform: translateX(-50%) scale(1.18) skewY(2deg);
+  }
+  75% {
+    filter: blur(9px) brightness(1.3);
+    transform: translateX(-50%) scale(1.22) skewY(-1deg);
+  }
+  100% {
+    filter: blur(8px) brightness(1.2);
+    transform: translateX(-50%) scale(1.2) skewY(1deg);
+  }
+}
 .all{
     height: 100vh;
     width: 100%;
@@ -52,12 +138,13 @@ button {
   transition: transform 0.1s ease;
 }
 
-button:hover .button {
+
+.button:hover, button:hover {
   /* Pull the button upwards when hovered */
   transform: translateY(-0.33em);
 }
 
-button:active .button {
+.button:active, button:active {
   /* Push the button downwards when pressed */
   transform: translateY(0);
 }
